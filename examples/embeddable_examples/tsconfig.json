@@ -1,0 +1,29 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "outDir": "target/types"
+  },
+  "include": [
+    "index.ts",
+    "common/**/*.ts",
+    "public/**/*.ts",
+    "public/**/*.tsx",
+    "server/**/*.ts",
+    "../../typings/**/*"
+  ],
+  "exclude": [
+    "target/**/*",
+  ],
+  "kbn_references": [
+    "@kbn/core",
+    "@kbn/kibana-utils-plugin",
+    "@kbn/kibana-react-plugin",
+    "@kbn/ui-actions-plugin",
+    "@kbn/embeddable-plugin",
+    "@kbn/dashboard-plugin",
+    "@kbn/saved-objects-plugin",
+    "@kbn/i18n",
+    "@kbn/utility-types",
+    "@kbn/es-query",
+  ]
+}
